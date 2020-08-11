@@ -61,6 +61,7 @@ const DEFAULT_CONFIG: Partial<SnowpackConfig> = {
     metaDir: '__snowpack__',
     minify: true,
     sourceMaps: false,
+    watch: false,
   },
 };
 
@@ -137,6 +138,7 @@ const configSchema = {
         metaDir: {type: 'string'},
         minify: {type: 'boolean'},
         sourceMaps: {type: 'boolean'},
+        watch: {type: 'boolean'},
       },
     },
     proxy: {
